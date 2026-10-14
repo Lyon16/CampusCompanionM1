@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CampusCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus Companion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcW-W9-6zZ">
+                                <rect key="frame" x="20" y="178" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Campus, In Your Pocket” " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgr-Qg-AiZ">
+                                <rect key="frame" x="20" y="220" width="353" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UV4-IL-gn2">
+                                <rect key="frame" x="76" y="280" width="240" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUK-Tq-Jo5">
+                                <rect key="frame" x="140" y="451" width="112" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started"/>
+                                <connections>
+                                    <action selector="getStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dl5-8v-pfF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FcW-W9-6zZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="314-5t-12n"/>
+                            <constraint firstItem="nUK-Tq-Jo5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="5Ub-3O-j7f"/>
+                            <constraint firstItem="nUK-Tq-Jo5" firstAttribute="top" secondItem="UV4-IL-gn2" secondAttribute="bottom" constant="21" id="JRo-sw-j4r"/>
+                            <constraint firstItem="UV4-IL-gn2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="MQ7-XD-znp"/>
+                            <constraint firstItem="UV4-IL-gn2" firstAttribute="centerX" secondItem="nUK-Tq-Jo5" secondAttribute="centerX" id="Yd4-4J-woi"/>
+                            <constraint firstItem="Jgr-Qg-AiZ" firstAttribute="top" secondItem="FcW-W9-6zZ" secondAttribute="bottom" constant="8" id="ajN-k4-feh"/>
+                            <constraint firstItem="UV4-IL-gn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d7C-Qh-5PV"/>
+                            <constraint firstItem="FcW-W9-6zZ" firstAttribute="trailing" secondItem="Jgr-Qg-AiZ" secondAttribute="trailing" id="haA-zS-8UR"/>
+                            <constraint firstItem="FcW-W9-6zZ" firstAttribute="leading" secondItem="Jgr-Qg-AiZ" secondAttribute="leading" id="iiN-Op-6GU"/>
+                            <constraint firstItem="Jgr-Qg-AiZ" firstAttribute="centerX" secondItem="UV4-IL-gn2" secondAttribute="centerX" id="oOd-20-ayn"/>
+                            <constraint firstItem="UV4-IL-gn2" firstAttribute="top" secondItem="Jgr-Qg-AiZ" secondAttribute="bottom" constant="40" id="r83-tY-h2R"/>
+                            <constraint firstItem="FcW-W9-6zZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xaI-IN-8Mo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nUK-Tq-Jo5" secondAttribute="bottom" constant="298" id="zv8-Tk-iA6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="subtitleLabel" destination="Jgr-Qg-AiZ" id="Job-Oy-lzC"/>
+                        <outlet property="titleLabel" destination="FcW-W9-6zZ" id="Xmx-41-nuX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
